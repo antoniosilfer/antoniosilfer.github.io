@@ -246,8 +246,6 @@ li a:hover {
     top: 10px;
     margin-top: 27px;
     visibility: hidden;
-    
-    
 }
 
 .ul_menu_movel li{
@@ -319,7 +317,7 @@ img {
 #dow_img1{ 
     position: absolute;
     background-attachment: fixed;
-    background-image: url(https://lh3.googleusercontent.com/-qu26TidY9TU/Vrz7ObhS1HI/AAAAAAAAAIY/OacbWN9eLQ0/s912-Ic42/silfer_fundo3.png);
+    background-image: url(image/silfer_fundo3.png);
     height: 400px;
     background-repeat: no-repeat;
     background-position: 0%, 0%;
@@ -489,11 +487,12 @@ img {
     width: 50px;
     position: fixed;
     border: 0px; 
-    background-image: url(https://drive.google.com/uc?export=download&id=0B18mJ6syAhjZM3hCRnpobUtCbFE);
+    background-image: url(image/up_arrow.png);
     background-size: 100% 100%;
     border-radius: 4px;
     padding: 0px;
     transition: 500ms;
+    visibility: hidden;
 }
 
 
