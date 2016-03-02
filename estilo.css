@@ -93,7 +93,7 @@ body {
     border: 0px;
     width: 45px;
     height: 40px;
-    background-image: url(https://drive.google.com/uc?export=download&id=0B18mJ6syAhjZZzFVYnJZZEFrczA);
+    background-image: url(image/menu_movel.png);
     background-color: transparent;
     position: absolute;
     right: 100px;
@@ -274,7 +274,7 @@ div#capa{
     height:100vh; 
     margin: 0px;
     padding: 0px;
-    background-image: url(https://drive.google.com/uc?export=download&id=0B18mJ6syAhjZLTRtMkRIVVRsZkk);
+    background-image: url(image/calheta.jpg);
     background-size: 100% 100%;    
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -1064,7 +1064,7 @@ img {
 .ul_recursos li{
     display: list-item;
     float: none;
-    list-style-image: url('https://drive.google.com/uc?export=download&id=0B18mJ6syAhjZV2V6alhIb1Q5eG8');
+    list-style-image: url('image/selected.png');
     text-align: justify;
     color: rgb(130, 130, 130);
     margin-bottom: 10px;
