@@ -1,29 +1,38 @@
 <!doctype html>
-<html lang="pt" prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
-    <head> 
-    
-        <meta property="og:type"               content="article" />
-<meta property="og:url"    content="https://www.cvsilfer.com" /> 
+<html lang="en" prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">  
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>SilFer File Transfer</title>       
+
+         <link rel="alternate" href="https://www.cvsilfer.com" hreflang="en" />
+         <link rel="alternate" href="https://www.cvsilfer.com/SilFer-Transferencia-archivos.html" hreflang="es" />
+         <link rel="alternate" href="https://www.cvsilfer.com/SilFer-transfert-fichier.html" hreflang="fr" />
+         <link rel="alternate" href="https://www.cvsilfer.com/SilFer-Trasferimento-file.html" hreflang="it" />
+         <link rel="alternate" href="https://www.cvsilfer.com/SilFer-transferencia-arquivo.html" hreflang="pt" />
+         <link rel="alternate" href="https://www.cvsilfer.com/SilFer-Передача-файла.html" hreflang="ru" />
+        
+<meta property="og:type"               content="article" />
+<meta property="og:url"    content="https://www.cvsilfer.com/index_eng.html" /> 
 <meta property="og:title"              content="SilFer File Transfer" />
-<meta property="og:description"        content="Melhor aplicativo para transferir os seus ficheiros em rede WiFi. SFT é o mais simples e poderoso aplicativo que oferece para você transferência com altas velocidades, atingindo dezenas de MB/s." />
+<meta property="og:description"        content="The best application to transfer your files with high speed between your devices using Wi-Fi. With SFT you'll be connected with all the people around you and send and receive files, all at the same time and without waiting." />
 <meta property="og:image"      content="http://lh3.googleusercontent.com/-o6GgEkdFYT0/VuNJ7e-ZKII/AAAAAAAAALM/8aelOzQXCBwT-y3Ijghn2U4-jPsoIu1hgCCo/I-Ic42/silfer600.png"/>
-<meta property="og:image:secure_url" content="https://lh3.googleusercontent.com/-o6GgEkdFYT0/VuNJ7e-ZKII/AAAAAAAAALM/8aelOzQXCBwT-y3Ijghn2U4-jPsoIu1hgCCo/I-Ic42/silfer600.png"/>
-<meta property="og:image:width" content="150" />
-<meta property="og:image:height" content="150" />
-        <meta property="og:site_name" content="SilFer File Transfer"/>
+<meta property="og:image:secure_url"  content="https://lh3.googleusercontent.com/-o6GgEkdFYT0/VuNJ7e-ZKII/AAAAAAAAALM/8aelOzQXCBwT-y3Ijghn2U4-jPsoIu1hgCCo/I-Ic42/silfer600.png"/>
+<meta property="og:site_name" content="SilFer File Transfer"/>
+  
         
         
         <link rel="shortcut icon" href="image/icon.png" />
-        <meta charset="utf-8">
-        
-        <meta name="Description" content=">SilFer File transfer é o melhor aplicativo para transferir com alta velocidade os seus ficheiros entre os seus dispositivos usando o Wi-Fi. Com o SFT poderás estar conectado com todas as pessoas ao seu redor e estar a enviar e receber ficheiros, tudo ao mesmo tempo e sem espera.">
-        <meta name="keywords" content="melhor aplicativo para enviar ficheiro, melhor programa para enviar ficheiro, enviar ficheiro usando wifi, enviar ficheiro rapido,  enviar ficheiro entre computadores, enviar ficheiro no android, enviar ficheiro no windows">
+        <meta charset="utf-8">   
+              
         <meta name="author" content="António Celso Fernandes">
+        <meta name="Description" content="The best application to transfer your files with high speed  between your devices using WiFi. With SilFer File Transfer you'll be connected with all the people around you and send and receive files, all at the same time and without waiting.">
+       
         
-        <title>SilFer File Transfer</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">     
-        <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
-        <link rel="stylesheet" href="estilo.css">
+       
+          <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+          <link rel="stylesheet" href="estilo.css">
+        
         
        
         <script>
@@ -31,11 +40,10 @@
         ga('create', 'UA-73977126-1', 'auto');
         ga('send', 'pageview');
         </script>
-        <script async src='//www.google-analytics.com/analytics.js'></script>    
-        
+        <script async src='//www.google-analytics.com/analytics.js'></script>     
        
         <script>
-           /* function preloadFunc()
+            function preloadFunc()
             {
                 var lang ="";
                 if(navigator.language.length > 2)
@@ -43,22 +51,32 @@
                 else
                     lang = navigator.language;
                 
-                if(lang == "en")
-                   window.location="http://www.google.com"; //Silfer in Inglish
-                else if(lang == "pt")
-                    alert("Portuguese");
+              var page = "";
+                if (lang == "en")                   
+                     return;  
+                else if (lang == "fr")
+                    page="SilFer-transfert-fichier";
+                else if(lang == "es")
+                    page="SilFer-Transferencia-archivos";
+                 else if(lang == "pt")
+                    page="SilFer-transferencia-arquivo";
+                else if(lang == "ru")
+                    page="SilFer-Передача-файла";
+                
                     
-            }
-           preloadFunc();*/
-             
-        
-         
-       $(document).ready(function(){                  
+                    window.location=page+".html";
+                    
+                    
+             }
+           preloadFunc();
+            
+            
+            
+            
+            
+       $(document).ready(function(){
            
-               
-           
-           
-               $('a').click(function(){
+            $('a').click(function(){
                 $('html, body').animate({
                     scrollTop: $( $.attr(this, 'href') ).offset().top - 60
                 }, 1000); 
@@ -94,7 +112,7 @@
                       $('#page_title').css({ "color":"rgb(0,109,255)"});   
                       $('#btt_menu').css({"background-image": "url(image/menu_movel_mycolor.png)"});  //menu_movel_mycolor 
                        
-                  }menu_movel
+                  }
                  
              } 
             else{
@@ -294,20 +312,13 @@
            
             
             
-             
-          
-             
-                
-       
-            
-            
         </script>
         
     </head>
     <body  onload="onload_all()">
         <div id="capa">
             <img id="img_pc_windows" class="v_img_slide" src="image/pc_windows1.png"  alt="">
-             <img id="img_phone_android" class="v_img_slide" src="image/eng/phone_android.png"  alt="">
+            <img id="img_phone_android" class="v_img_slide" src="image/eng/phone_android.png"  alt=" ">
         </div>
         <div id="capa_over">          
         </div>
@@ -317,120 +328,129 @@
                     <h3 id="page_title">SFT</h3>                  
                     
                     <ul id="menu"> 
-                             <li id="developer" class="hvr-underline-from-center li_menu_pc"><a  href="#divDesenvolvidor">Desenvolvedor</a></li>
-                             <li id="RECURSOS" class="hvr-underline-from-center li_menu_pc"><a  href="#divRECURSOS">RECURSOS</a></li>
+                             <li id="developer" class="hvr-underline-from-center li_menu_pc"><a  href="#divDesenvolvidor">DEVELOPER</a></li>
+                             <li id="how_use" class="hvr-underline-from-center li_menu_pc"><a id="how_use" href="#divComoUsar">HOW TO USE</a></li>
+                             <li id="RECURSOS" class="hvr-underline-from-center li_menu_pc"><a  href="#divRECURSOS">FEATURES</a></li>
                              <li id="DOWNLOAD" class="hvr-underline-from-center li_menu_pc"><a  href="#divDOWNLOAD">DOWNLOAD</a></li>
-                            <li id="how_use" class="hvr-underline-from-center li_menu_pc"><a id="how_use" href="#divComoUsar">Como Usar</a></li>
-                             <li id="SOBRE" class="hvr-underline-from-center li_menu_pc"><a href="#divSobre">DESCRIÇÃO</a></li> 
+                             <li id="SOBRE" class="hvr-underline-from-center li_menu_pc"><a href="#divSobre">DESCRIPTION</a></li> 
                         </ul>
                      <div id="btt_menu"></div>  
                      <div id="menu_movel">
                            <ul class="ul_menu_movel"> 
-                             <li><a  href="#divSobre">DESCRIÇÃO</a></li>
-                             <li><a  href="#divComoUsar">Como Usar</a></li>
+                             <li><a  href="#divSobre">DESCRIPTION</a></li>
                              <li><a  href="#divDOWNLOAD">DOWNLOAD</a></li>
-                             <li><a  href="#divRecuros">RECURSOS</a></li>                             
-                             <li><a  href="#divDesenvolvidor">Desenvolvedor</a></li>
+                             <li><a  href="#divRecuros">FEATURES</a></li>
+                             <li><a  href="#divComoUsar">HOW TO USE</a></li>
+                             <li><a  href="#divDesenvolvidor">DEVELOPER</a></li>
                           </ul>   
                      </div>
-                   <a id="ling_english" href="https://www.cvsilfer.com/index_eng.html"><img border="0" src="image/eng.PNG.png" width="45px" height="30px"></a>
+                   
+             <div id="ling_english">
+                <select id="select_lang" class="mydropdown" onchange="seltect_language()">
+                    <option>es</option>
+                    <option selected>en</option>                    
+                    <option>fr</option>
+                    <option>it</option> 
+                    <option>pt</option>    
+                    <option>ru</option> 
+                 </select>
+             </div>
+                   
               </div>
                    
         </header>
         <div id="capa_espaco" class="row"> 
             <div onclick="google_analitc(1);" class="botao"  id="btt_dow_1">
-            <img class="vertical_align1" style="margin-right: 15px" src="image/logo_windows.png" alt=""/><a onclick="event.cancelBubble = true; google_analitc(1);" class="link_download vertical_align1" href = "https://drive.google.com/uc?export=download&id=0B18mJ6syAhjZX2lsNWxzeU9DX1E">WINDOWS</a><p class="p_beta">versão 1.0 (Beta) 755KB</p></div>
-            
+            <img class="vertical_align1" style="margin-right: 15px" src="image/logo_windows.png" alt=""/><a onclick="event.cancelBubble = true; google_analitc(1);" class="link_download vertical_align1" href = "https://drive.google.com/uc?export=download&id=0B18mJ6syAhjZX2lsNWxzeU9DX1E" download>WINDOWS</a><p class="p_beta">version 1.0 (Beta) 755KB</p></div>
             <div onclick="google_analitc(2);" class="botao" id="btt_dow_2">
-            <img class="vertical_align1" style="margin-right: 15px" src="image/logo_android.png" alt=""/><a onclick="event.cancelBubble = true; google_analitc(2);" class="link_download vertical_align1" href = "https://drive.google.com/uc?export=download&id=0B18mJ6syAhjZMS1ReW5DZ2paQWs">ANDROID</a><p class="p_beta">versão 1.0 (Beta) 1.4MB</p></div>
-        </div>   
-            
+            <img class="vertical_align1" style="margin-right: 15px" src="image/logo_android.png" alt=""/><a onclick="event.cancelBubble = true; google_analitc(2);" class="link_download vertical_align1" href = "https://drive.google.com/uc?export=download&id=0B18mJ6syAhjZMS1ReW5DZ2paQWs" download>ANDROID</a><p class="p_beta">version 1.0 (Beta) 1.4MB</p></div>
+        </div>               
         <div class="row">   
             <div id="divSobre" class="row">
-                <h2 id="h3_descricon" class="aricle_tile translate">DESCRIÇÃO</h2>  
-                <p class="p_texto" style="margin-top: 5px; margin-bottom: 5px;">SilFer File transfer é o melhor aplicativo para transferir com alta velocidade os seus ficheiros entre os seus dispositivos usando o Wi-Fi. Com o SFT poderás estar conectado com todas as pessoas ao seu redor e estar a enviar e receber ficheiros, tudo ao mesmo tempo e sem espera.</p><p class="p_texto" style="margin-top: 5px; margin-bottom: 5px;"> SilFer File Transfer é muito simples de utilizar, necessitando qualquer utilizador de 15 segundos para aprender a utilizar o aplicativo.</p><p class="p_texto" style="margin-top: 5px; margin-bottom: 5px;">SilFer file Transfer tenta sempre aproveitar no máximo a capacidade dos dispositivos possibilitando assim aos utilizadores realizar transferências com altas velocidades atingindo muitas vezes dezenas de MB/s dependendo da capacidade dos dispositivos.</p><p class="p_texto" style="margin-top: 5px; margin-bottom: 5px;">O SFT faz tudo para você, a única coisa que o SFT não faz é escolher quais dispositivos conectar e selecionar quais ficheiros para enviar já que o SFT não consegue ler os seus pensamentos mas oferece para você recursos simples e robustos para completar estas tarefas em poucos segundos.</p>
+                <h2 id="h3_descricon" class="aricle_tile translate">DESCRIPTION</h2>  
+                <p class="p_texto" style="margin-top: 5px; margin-bottom: 5px;"><b>Silfer File Transfer</b> (SFT) is the best application to transfer your files with high speed between your devices using WiFi. With SFT you'll be connected with all the people around you and send and receive files, all at the same time and without waiting.</p><p class="p_texto" style="margin-top: 5px; margin-bottom: 5px;">SFT is a very simple application to use, requiring any user only 15 seconds to learn how to use the application.</p><p class="p_texto" style="margin-top: 5px; margin-bottom: 5px;">Silfer File Transfer always tries to take advantage of the maximum capacity of the devices thus enabling users to make transfers at high speeds often reaching tens of MB/s depending on the capabilities of the devices.</p><p class="p_texto" style="margin-top: 5px; margin-bottom: 5px;">SFT does everything for you, the only thing the SFT does not do is choose which devices to connect and select which files to send since the SFT can not read your thoughts but provides you with simple and robust features to complete these tasks in few seconds.</p>
             
             </div>
             
-                        <div id="divComoUsar" class="row" style="padding: 0px; margin: 0px;  width: 100%;">
-                  <h2 class="aricle_tile translate">COMO USAR</h2>
-                  <h4 style="text-align: center; margin-bottom: 5px; margin-top: 0px">2º Telemóvel envia ficheiros para 1º Telemóvel</h4>
+            <div id="divComoUsar" class="row" style="padding: 0px; margin: 0px;  width: 100%;">
+                  <h2 class="aricle_tile translate">HOW TO USE</h2>
+                  <h4 style="text-align: center; margin-bottom: 5px; margin-top: 0px">2º Phone sends files to 1º Phone</h4>
                 <div id="ce_outer">                    
                     <div id="ce_container">
                         <div id="ce_child" class="col2">
-                            <p class="img_descreption">1º Telemóvel</p>
-                           <img alt="Ce" class="img_slide" src="image/1.png">                             
+                            <p class="img_descreption">1º Phone</p>
+                           <img alt="Ce" class="img_slide" src="image/eng/Wifi file transfer.png">                             
                         </div>
                         <div class="col2" >
-                            <p class="img_descreption">2º Telemóvel</p>
+                            <p class="img_descreption">2º Phone</p>
                              <img alt="Ce" class="img_slide" src="image/2.png">                             
                         </div>
                         <div class="col2" >
-                             <p class="img_descreption">1º Telemóvel</p>
+                             <p class="img_descreption">1º Phone</p>
                              <img alt="Ce" class="img_slide" src="image/3.png">                             
                         </div>
                         <div class="col2">  
-                            <p class="img_descreption">2º Telemóvel</p>
+                            <p class="img_descreption">2º Phone</p>
                              <img alt="Ce" class="img_slide" src="image/4.png">
                         </div>
                         <div class="col2">
-                            <p class="img_descreption">2º Telemóvel</p>
-                             <img alt="Ce" class="img_slide" src="image/5.png">                             
+                            <p class="img_descreption">2º Phone</p>
+                             <img alt="Ce" class="img_slide" src="image/eng/wireless file transfer.png">                             
                         </div>
                         <div class="col2">
-                            <p class="img_descreption">1º Telemóvel</p>
-                             <img alt="Ce" class="img_slide" src="image/6.png">                             
+                            <p class="img_descreption">1º Phone</p>
+                             <img alt="Ce" class="img_slide" src="image/eng/6.png">                             
                         </div>     
                         <div class="col2">
-                            <p class="img_descreption">1º Telemóvel</p>
-                             <img alt="Ce" class="img_slide" src="image/7.png">
+                            <p class="img_descreption">1º Phone</p>
+                             <img alt="Ce" class="img_slide" src="image/eng/7.png">
                         </div>
                         <div class="col2">
-                            <p class="img_descreption">1º Telemóvel</p>
+                            <p class="img_descreption">1º Phone</p>
                              <img alt="Ce" class="img_slide" src="image/8.png">
                         </div>  
                     </div>
                 </div>
-                   <h4 style="text-align: center; margin-bottom: 0px; margin-top: 80px">1º Computador envia ficheiros para 2º Computador</h4>
+                   <h4 style="text-align: center; margin-bottom: 0px; margin-top: 80px">1º Computer sends files to 2º  Computer</h4>
                    <div id="ce_outer_v"> 
                         <div id="ce_container_v">
                             <div class="ce_child_v">
-                                <p class="img_descreption_pc">1º Computador</p>
-                                <img alt="Melhor aplicativo para transferencia de ficheiros" class="v_img_slide" src="image/pc1.PNG.png">
+                                <p class="img_descreption_pc">1º Computer</p>
+                                <img alt="Melhor aplicativo para transferencia de ficheiros" class="v_img_slide" src="image/eng/pc1.png">
                             </div>
                             <div class="ce_child_v" >   
-                                <p class="img_descreption_pc">2º Computador</p>
+                                <p class="img_descreption_pc">2º  Computer</p>
                                 <img alt="Ce" class="v_img_slide" src="image/pc2.PNG.png">
                             </div>
                             <div class="ce_child_v" >   
-                                <p class="img_descreption_pc">2º Computador</p>
-                                <img alt="Ce" class="v_img_slide" src="image/pc3.PNG.png">
+                                <p class="img_descreption_pc">2º  Computer</p>
+                                <img alt="Ce" class="v_img_slide" src="image/eng/Wifi file transfer in windows.png">
                             </div>
                             <div class="ce_child_v" >
-                                <p class="img_descreption_pc">1º Computador</p>
+                                <p class="img_descreption_pc">1º Computer</p>
                                 <img alt="Ce" class="v_img_slide" src="image/pc4.PNG">
                             </div>
                             <div class="ce_child_v" >  
-                                <p class="img_descreption_pc">2º Computador</p>
-                                <img alt="Ce" class="v_img_slide" src="image/pc5.PNG.png">
+                                <p class="img_descreption_pc">2º  Computer</p>
+                                <img alt="Ce" class="v_img_slide" src="image/eng/pc5.png">
                             </div>
                             <div class="ce_child_v">
-                                 <p class="img_descreption_pc">1º Computador</p>
+                                 <p class="img_descreption_pc">1º Computer</p>
                                 <img alt="Ce" class="v_img_slide" src="image/pc6.PNG.png">
                             </div>
                             <div class="ce_child_v">
-                                <p class="img_descreption_pc">2º Computador</p>
+                                <p class="img_descreption_pc">2º  Computer</p>
                                 <img alt="Ce" class="v_img_slide" src="image/pc7.PNG.png">
                             </div>
                         </div>
                    </div>
                    <div class="row" style="margin-top: 60px;">
-                       <h4 style="text-align: center; margin-bottom: 0px; margin-top: 80px">Selecionador de arquivos do SilFer File Transfer no Android</h4>
-                           <iframe id="iframe_video_flp" class="h_center" src="https://www.youtube.com/embed/RCXNlNCMNnM?cc_load_policy=1">
+                       <h4 style="text-align: center; margin-bottom: 0px; margin-top: 80px">File chooser of SFT in Android</h4>
+                           <iframe id="iframe_video_flp" class="h_center" src="https://www.youtube.com/embed/RCXNlNCMNnM?cc_load_policy=1&hl=en&cc_lang_pref=en">
                            </iframe>
                        
-                       <h4 style="text-align: center; margin-bottom: 0px; margin-top: 80px">SilFer File Transfer no Microsoft Windows</h4>
-                           <iframe id="iframe_video_windows" class="h_center" src="https://www.youtube.com/embed/rvQaqk5250s?cc_load_policy=1">
+                       <h1 style="text-align: center; margin-bottom: 0px; margin-top: 80px; font-size: 13pt ">SilFer File Transfer in Microsoft Windows</h1>
+                           <iframe id="iframe_video_windows" class="h_center" src="https://www.youtube.com/embed/rvQaqk5250s?cc_load_policy=1&hl=en&cc_lang_pref=en">
                            </iframe>
                    </div>
             </div> 
@@ -441,34 +461,33 @@
               </div>
                 <h3 id="h3_download">DOWNLOAD</h3>
                  <div id="dow_img1_espaco">
-        
-        <div  onclick="google_analitc(3);" class="botao translate"  id="btt_dow_3">
-            <img class="vertical_align1" style="margin-right: 15px" src="image/logo_windows.png" alt=""/><a onclick="event.cancelBubble = true; google_analitc(3);" class="link_download vertical_align1">WINDOWS</a></div>
+                <div  onclick="google_analitc(3);" class="botao translate"  id="btt_dow_3">
+            <img class="vertical_align1" style="margin-right: 15px" src="image/logo_windows.png" alt=""/><a onclick="event.cancelBubble = true; google_analitc(3);" class="link_download vertical_align1" href = "https://drive.google.com/uc?export=download&id=0B18mJ6syAhjZX2lsNWxzeU9DX1E">WINDOWS</a></div>
             <div onclick="google_analitc(4);" class="botao translate" id="btt_dow_4" >
-            <img class="vertical_align1" style="margin-right: 15px" src="image/logo_android.png" alt=""/><a onclick="event.cancelBubble = true; google_analitc(4);" class="link_download vertical_align1">ANDROID</a></div>
+            <img class="vertical_align1" style="margin-right: 15px" src="image/logo_android.png" alt=""/><a onclick="event.cancelBubble = true; google_analitc(4);" class="link_download vertical_align1" href = "https://drive.google.com/uc?export=download&id=0B18mJ6syAhjZMS1ReW5DZ2paQWs">ANDROID</a></div>
             </div>        
            
             <div id="divRECURSOS">
-                 <h2 class="aricle_tile translate">RECURSOS</h2>
+                 <h2 class="aricle_tile translate">FEATURES</h2>
                 <div  style="padding-top: 0px">
                 <ul class="ul_recursos">
-                    <li>Único aplicativo que suporta múltiplas (envio e/ou receção) transferências entre múltiplos dispositivos. Com o SFT um dispositivo pode estar a enviar ficheiros (podem ser diferentes) a múltiplos dispositivos ao mesmo tempo, e também nesse mesmo instante o dispositivo poderá estar a receber ficheiros de múltiplos dispositivos.</li>
-                    <li>Um dispositivo poderá enviar e estar a receber arquivos com o mesmo dispositivo e no mesmo instante. Se um dispositivo  está enviando 10GB para outro dispositivo, e o outro dispositivo também quer enviar 100 MB, não há que esperar, basta efetuar mais uma nova conexão e pronto.</li>
-                    <li>O SFT é o único que permite um utilizador trocar mensagens de texto (Chat). Este recurso é muito importante quando se usa o SFT em grandes empresas, prédios ou em universidades já que com o SFT você poderá estar facilmente ligado com todos as pessoas ao seu redor. Assim quando necessitar de um ficheiro não é preciso gritar ou ir até a pessoa desejada para pedir o ficheiro. Envia uma mensagem “preciso de um ficheiro XYZ”.</li>
-                    <li>O SFT possui a melhor ferramenta para escolher os seus ficheiros. Com o selecionador de ficheiros você poderá ver suas fotos, reproduzir áudio e vídeo e ainda pesquisar por qualquer ficheiro. Assim você poderá dizer ao SFT que deseja ver todas as músicas cujo título contem a palavra “paixão”.</li>
-                    <li>Dá o utilizador a liberdade sempre de escolher o local onde os ficheiros serão recebidos. Este recurso é muito importante já que todo o utilizador sempre deseja ter cada tipo de ficheiro num local específico evitando assim bagunças.</li>
-                     <li>Possibilita ao utilizador escolher ficheiros uma vez e enviar a múltiplos dispositivos ao mesmo tempo. Muito importante quando o utilizador precisa de enviar os mesmos ficheiros para múltiplos dispositivos. Em vez de selecionar os mesmos arquivos 100 vezes para enviar a 100 dispositivos, seleciona 1 vez e envia a 100 dispositivos.</li>
-                    <li>Suporta a continuidade de transferência em qualquer momento. Muito importante em casos de erros, quando um ficheiro já existe no dispositivo do recetor ou quando um utilizador tiver por exemplo 300GB para enviar, então envias 150GB num momento e enviarás o restante num outro momento, dia, mês até mesmo ano.</li>
-                    <li>Oferece informações relevantes da transferência antes do utilizador aceitar a transferência. É sempre importante saber quantos ficheiros, o tamanho total, e quem enviou os ficheiros antes de aceitar a transferência</li>
-                     <li>Permite ao utilizador enviar ficheiros sobre qualquer rede (WiFi, Ethernet, …). Somente sobre as redes moveis que o SFT não permite por motivos de segurança, mas essa funcionalidade poderá ser ativada nas próximas versões.</li>
-                    <li>Permite ao utilizador aceitar conexões automaticamente ou manualmente. Isto porque SFT é como um aplicativo de Chat, em que os utilizadores estabelecem sessões facilmente e enviam mensagens (ficheiros) em qualquer momento.</li>
-                    <li>Suporta o envio de qualquer tipo de ficheiro e de qualquer tamanho.</li>
+                    <li>Only application that supports multiple (sending and / or receiving) transfers between multiple devices. With SFT one device can be sending files to multiple devices at the same time, and also that very instant the device may be receiving files from multiple devices.</li>
+                    <li>A device can send and receive files to the same device and at the same time. If a device is sending 10GB to another device, the other device also wants to send 100 MB, it is not need to wait, just make another new connection and ready.</li>
+                    <li>The SilFer File Transfer is the only one that allows a user to exchange text messages (Chat). This feature is very important when using the SFT in large enterprises, buildings or universities since with the SFT you can be easily connected with all the people around you. So when you need a file is no need to shout or go to the desired person to request the file. Send a message "I need a file XYZ".</li>
+                    <li>The SFT has the best tool to choose your files. With the file selector you can view the photos, play audio and video, and even search for any file. So you can tell the SilFer File Transfer that you want to see all the songs whose title contains the word "passion".</li>
+                    <li>SilFer File Transfer gives the user the freedom always to choose the location where the files will be received. This feature is very important since all the user always want to have every type of file in a specific location thus avoiding mess.</li>
+                     <li>Enables user to select files once and send to multiple devices simultaneously. Very important when you need to send the same files to multiple devices. Instead of selecting the same file 100 times to send 100 devices, selects 1 time and sends to 100 devices.</li>
+                    <li>SilFer File Transfer supports the continuity of transfer at any time. Very important in cases of errors when a file already exists in receiver device or when a user have 300 GB to send, so you send 150 GB at a time and shall send the rest in another time, day, month, even year.</li>
+                    <li>SilFer File Transfer provides relevant information about the transfer before the user accepts the transfer. It is always important to know how many files, the total size, and who is trying to send file before accepting the transfer.</li>
+                     <li>Allows the user to send files over any network (WiFi, Ethernet, ...). Only on mobile networks that SilFer File Transfer does not allow for security reasons, but this feature may be enabled in future releases.</li>
+                    <li>SilFer File Transfer allows the user to accept connections automatically or manually. This is because SilFer File Transfer is like a chat application, where users establish sessions and easily send messages (files) at any time.</li>
+                    <li>SilFer File Transfer supports the sending of any kind and any file size.</li>
                 </ul>
             </div>
             </div> 
-
+            
              <div id="divDesenvolvidor" class="row" >
-                  <h2 class="aricle_tile translate" style=" margin-bottom: 100px">Sobre Desenvolvedor</h2>
+                  <h2 class="aricle_tile translate" style=" margin-bottom: 100px">ABOUT DEVELOPER</h2>
                 
                  <div style="position: relative">
                       <div id="div_desen_foto">
@@ -479,16 +498,17 @@
                  
                   <div id="div_desen_container"> 
                       <div class="col-12">
-                          <p style="text-align: center; color: white" class="translate">Nome: António Celso Silva Fernandes</p>
-                          <p style="text-align: center; color: white" >Email: antonio_silfer@hotmail.com</p>
-                          <p style="text-align: center; color: white">Nacionalidade: Cabo-Verdiano</p>
+                          <p style="text-align: center; color: white" class="translate">Name: António Celso Silva Fernandes</p>
+                          <p style="text-align: center; color: white" >Email: antonio@cvsilfer.com</p>
+                          <p style="text-align: center; color: white">Nationality: Cape Verdean</p>
                      </div>
                  </div>       
             </div> 
        </div>          
         
-       <div id="btt_scroll_top"></div>    
-            <script>
+       <div id="btt_scroll_top"></div>   
+            
+       <script>
             function google_analitc(op) {
               if(op == 1)
               {
@@ -512,7 +532,28 @@
                      location.href = "https://drive.google.com/uc?export=download&id=0B18mJ6syAhjZMS1ReW5DZ2paQWs";
               }
             }
-            </script>
+           
+           
+           function seltect_language() {
+                var lang = document.getElementById("select_lang").value;                
+               
+                if (lang == "en")
+                     return;
+                else if (lang == "fr")
+                    lang="SilFer-transfert-fichier";
+                else if(lang == "es")
+                    lang="SilFer-Transferencia-archivos";
+                else if(lang == "it")
+                    lang="SilFer-Trasferimento-file";
+                 else if(lang == "pt")
+                    lang="SilFer-transferencia-arquivo";
+                else if(lang == "ru")
+                    lang="SilFer-Передача-файла";
+                    
+                    window.location=lang+".html";
+           }
+            
+        </script>      
     </body>
     
 </html>
