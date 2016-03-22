@@ -1,0 +1,2 @@
+ErrorDocument 404 /index.html
+ErrorDocument 410 /index.html
