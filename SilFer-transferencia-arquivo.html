@@ -1,0 +1,534 @@
+<!doctype html>
+<html lang="pt" prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
+    <head>        
+        
+        <link rel="alternate" href="https://www.cvsilfer.com" hreflang="en" />
+        <link rel="alternate" href="https://www.cvsilfer.com/SilFer-Transferencia-archivos.html" hreflang="es" />
+        <link rel="alternate" href="https://www.cvsilfer.com/SilFer-transfert-fichier.html" hreflang="fr" />
+         <link rel="alternate" href="https://www.cvsilfer.com/SilFer-Trasferimento-file.html" hreflang="it" />
+        <link rel="alternate" href="https://www.cvsilfer.com/SilFer-transferencia-arquivo.html" hreflang="pt" />
+         <link rel="alternate" href="https://www.cvsilfer.com/SilFer-Передача-файла.html" hreflang="ru" />
+        
+        <meta property="og:type"               content="article" />
+<meta property="og:url"    content="https://www.cvsilfer.com" /> 
+<meta property="og:title"              content="SilFer Transferência de arquivo" />
+<meta property="og:description"        content="Melhor aplicativo para transferir os seus ficheiros com alta velocidade entre os seus dispositivos usando o Wi-Fi. Com o SFT poderás estar conectado com todas as pessoas ao seu redor e estar a enviar e receber ficheiros, tudo ao mesmo tempo e sem espera." />
+<meta property="og:image"      content="http://lh3.googleusercontent.com/-o6GgEkdFYT0/VuNJ7e-ZKII/AAAAAAAAALM/8aelOzQXCBwT-y3Ijghn2U4-jPsoIu1hgCCo/I-Ic42/silfer600.png"/>
+<meta property="og:image:secure_url" content="https://lh3.googleusercontent.com/-o6GgEkdFYT0/VuNJ7e-ZKII/AAAAAAAAALM/8aelOzQXCBwT-y3Ijghn2U4-jPsoIu1hgCCo/I-Ic42/silfer600.png"/>
+<meta property="og:image:width" content="150" />
+<meta property="og:image:height" content="150" />
+        <meta property="og:site_name" content="SilFer Transferência de arquivo"/>
+        
+        
+        <link rel="shortcut icon" href="image/icon.png" />
+        <meta charset="utf-8">
+        
+        <meta name="Description" content="Melhor aplicativo para transferir os seus ficheiros com alta velocidade entre os seus dispositivos usando o Wi-Fi. Com o SilFer Transferência de arquivo poderás estar conectado com todas as pessoas ao seu redor e estar a enviar e receber ficheiros, tudo ao mesmo tempo e sem espera.">
+        <meta name="author" content="António Celso Fernandes">
+        
+        <title>SilFer Transferência arquivo</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">     
+        <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+        <link rel="stylesheet" href="estilo.css">
+        
+       
+        <script>
+        window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+        ga('create', 'UA-73977126-1', 'auto');
+        ga('send', 'pageview');
+        </script>
+        <script async src='//www.google-analytics.com/analytics.js'></script>    
+        
+       
+        <script>
+            
+         
+       $(document).ready(function(){                  
+           
+               
+           
+           
+               $('a').click(function(){
+                $('html, body').animate({
+                    scrollTop: $( $.attr(this, 'href') ).offset().top - 60
+                }, 1000); 
+                return false;
+            });
+           
+            $('#menu_movel').slideToggle(600);
+           
+           $('#menu_movel a').click(function(){
+               $('#menu_movel').slideToggle(600);
+           });
+           
+           
+           $('#btt_scroll_top').hide();  
+           
+          
+           
+            $('#btt_menu').click(function(){
+                $('#menu_movel').slideToggle(600);
+            });
+           
+           
+           var lastScrollTop = 0;
+          
+           $(window).scroll(function() { 
+               var current_position = $(this).scrollTop();
+             if(current_position > $(window).height()/2) { 
+                  if($("#c_header").css('backgroundColor').toLowerCase() != 'rgb(255, 255, 255)')
+                  {
+                    
+                      $('#c_header').css({ transition: '700ms'}); 
+                      $('#c_header').css({ backgroundColor: 'white', "color":"rgb(150,150,150)"  }); 
+                      $('#page_title').css({ "color":"rgb(0,109,255)"});   
+                      $('#btt_menu').css({"background-image": "url(image/menu_movel_mycolor.png)"});  //menu_movel_mycolor 
+                       
+                  }menu_movel
+                 
+             } 
+            else{
+                
+                  if($("#c_header").css('backgroundColor').toLowerCase() != 'rgba(0, 0, 0, 0)'){
+                     $('#c_header').css({  transition: '700ms'}); 
+                     $('#c_header').css({"color":"white", "background-color":"transparent"});
+                     $('#page_title').css({ "color":"white"}); 
+                     $('#btt_menu').css({"background-image": "url(image/menu_movel.png)"});//menu_movel
+                  }
+                
+                 
+                 
+            }   
+               
+               if(current_position > $("#capa").height()) {
+                    $('#c_header').addClass("c_header_1");                    
+               }
+               else{
+                     $('#c_header').removeClass("c_header_1");      
+                    $('#btt_scroll_top').hide();  
+                   } 
+               
+               if ($('#menu_movel').is(':visible')) {
+                    $('#menu_movel').slideUp();
+                }
+               
+               if(current_position > $(window).height())
+                   {
+                       if( lastScrollTop < current_position)
+                           {
+                               if ($('#c_header').is(':visible')) {
+                                    $('#c_header').css({ transition: '0s'});   
+                                    $('#c_header').slideUp();
+                                    $('#btt_scroll_top').hide();  
+                                }
+                           }
+                       else{
+                           
+                            if ($('#c_header').is(':visible') == false) {
+                                 $('#c_header').css({ transition: '0s'});  
+                                    $('#c_header').slideDown();
+                                  $('#btt_scroll_top').show();  
+                                }
+                       }
+                   }
+              
+              lastScrollTop =current_position; 
+               
+
+
+                $('.translate').each( function(i){
+
+                    var bottom_of_object = $(this).offset().top + $(this).outerHeight();
+                    var bottom_of_window = $(window).scrollTop() + $(window).height();
+
+                    /* If the object is completely visible in the window, fade it it */
+                    if( bottom_of_window > bottom_of_object){
+
+                        $(this).css({transform: 'translate3d(0, 0, 0)', opacity: '1'});
+
+                    }
+
+
+                }); 
+               
+               var docViewTop = $(window).scrollTop();
+               var docViewBottom = docViewTop + $(window).height();
+               
+               if($('#divSobre').offset().top - 200 <= docViewTop && $('#divSobre').offset().top + $('#divSobre').height() - 200 > docViewTop )
+              {
+                    
+                      $('#SOBRE').addClass("li_menu_pc_selected");
+                      $('#DOWNLOAD').removeClass("li_menu_pc_selected");
+                      $('#RECURSOS').removeClass("li_menu_pc_selected");
+                      $('#how_use').removeClass("li_menu_pc_selected");
+                      $('#developer').removeClass("li_menu_pc_selected");
+                   
+              }
+               else  if($('#divDOWNLOAD').offset().top  - 200 <= docViewTop && $('#divRECURSOS').offset().top - 200> docViewTop )              {                   
+                     $('#SOBRE').removeClass("li_menu_pc_selected");
+                      $('#DOWNLOAD').addClass("li_menu_pc_selected");
+                      $('#RECURSOS').removeClass("li_menu_pc_selected"); 
+                      $('#how_use').removeClass("li_menu_pc_selected");
+                      $('#developer').removeClass("li_menu_pc_selected");
+               }
+            else if($('#divRECURSOS').offset().top - 200 <= docViewTop && $('#divComoUsar').offset().top  -200 > docViewTop )              {  
+             
+                    $('#SOBRE').removeClass("li_menu_pc_selected");
+                      $('#DOWNLOAD').removeClass("li_menu_pc_selected");
+                      $('#RECURSOS').addClass("li_menu_pc_selected");
+                      $('#how_use').removeClass("li_menu_pc_selected"); 
+                      $('#developer').removeClass("li_menu_pc_selected");
+               }
+                 else  if($('#divComoUsar').offset().top -200 <= docViewTop && $('#divDesenvolvidor').offset().top -300  > docViewTop )      {   
+                    $('#SOBRE').removeClass("li_menu_pc_selected");
+                      $('#DOWNLOAD').removeClass("li_menu_pc_selected");
+                      $('#RECURSOS').removeClass("li_menu_pc_selected");
+                      $('#how_use').addClass("li_menu_pc_selected");
+                      $('#developer').removeClass("li_menu_pc_selected");
+               }
+             else  if($('#divDesenvolvidor').offset().top -300 <= docViewTop)              {  
+                 
+                    $('#SOBRE').removeClass("li_menu_pc_selected");
+                      $('#DOWNLOAD').removeClass("li_menu_pc_selected");
+                      $('#RECURSOS').removeClass("li_menu_pc_selected");
+                      $('#how_use').removeClass("li_menu_pc_selected");
+                      $('#developer').addClass("li_menu_pc_selected");
+               }
+               else
+                   {
+                     $('#SOBRE').removeClass("li_menu_pc_selected");
+                      $('#DOWNLOAD').removeClass("li_menu_pc_selected");
+                      $('#RECURSOS').removeClass("li_menu_pc_selected");
+                      $('#how_use').removeClass("li_menu_pc_selected");
+                      $('#developer').removeClass("li_menu_pc_selected"); 
+                   }
+               
+        });  
+   
+          /* var width = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+            
+             /*//////////////////////////////////////////////////////////////////////////////////*/
+            
+           $("#btt_scroll_top").click(function() {
+            $('html, body').animate({
+                scrollTop: $("#capa").offset().top
+            }, 700);
+           });
+           
+           
+           
+           
+           
+       });
+       
+            function onload_all() {
+               var tamanho = 0;
+               var ce_container = $("#ce_container").width();
+               var width = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+               var child_width = $("#ce_child").width();
+               var translate = 0;
+           
+               var v_translate = 0;
+               var v_ce_container = $("#ce_container_v").height();
+               var height = $("#ce_outer_v").height();
+           
+             setInterval(function(){  
+                 if(width > 1200){
+                         
+                        $("#ce_container").css({transform: 'translate3d(-'+translate+'px, 0, 0)'});
+
+                          if(translate +100 >=  ce_container - 4 * child_width)
+                            translate = 0;   
+                          else
+                               translate = translate + child_width;
+                      }                 
+                 else if(width > 800){
+                         
+                          $("#ce_container").css({transform: 'translate3d(-'+translate+'px, 0, 0)'});
+
+                          if(translate >=  ce_container - 3 * child_width)
+                            translate = 0;   
+                          else
+                               translate = translate + child_width;
+                      }
+                    else if (width > 550){
+                        
+                              $("#ce_container").css({transform: 'translate3d(-'+translate+'px, 0, 0)'});
+
+                              if(translate + 100 >= (ce_container - 2 * child_width))
+                                  translate = 0;   
+                              else
+                                   translate = translate + child_width;
+                        }
+                 else{
+                       $("#ce_container").css({transform: 'translate3d(-'+translate+'px, 0, 0)'});
+
+                              if(translate + 100 >= (ce_container - child_width))
+                                  translate = 0;   
+                              else
+                                   translate = translate + child_width;
+                 }
+                 
+                 
+                 $("#ce_container_v").css({transform: 'translate3d(0, -'+v_translate+'px, 0)'});
+                 if(v_translate + height + 100 < v_ce_container )
+                     v_translate = v_translate + height;
+                 else
+                    v_translate = 0; 
+                 
+
+             
+             }, 2500); 
+               
+           }                
+       
+            
+            
+        </script>
+        
+    </head>
+    <body  onload="onload_all()">
+        <div id="capa">
+            <img id="img_pc_windows" class="v_img_slide" src="image/pc_windows1.png"  alt="">
+             <img id="img_phone_android" class="v_img_slide" src="image/eng/phone_android.png"  alt="">
+        </div>
+        <div id="capa_over">          
+        </div>
+        <header >  
+               <div>
+               <div id="c_header"> 
+                    <h3 id="page_title">SFT</h3>                  
+                    
+                    <ul id="menu"> 
+                             <li id="developer" class="hvr-underline-from-center li_menu_pc"><a  href="#divDesenvolvidor">Desenvolvedor</a></li>
+                             <li id="RECURSOS" class="hvr-underline-from-center li_menu_pc"><a  href="#divRECURSOS">RECURSOS</a></li>
+                             <li id="DOWNLOAD" class="hvr-underline-from-center li_menu_pc"><a  href="#divDOWNLOAD">DOWNLOAD</a></li>
+                            <li id="how_use" class="hvr-underline-from-center li_menu_pc"><a id="how_use" href="#divComoUsar">Como Usar</a></li>
+                             <li id="SOBRE" class="hvr-underline-from-center li_menu_pc"><a href="#divSobre">DESCRIÇÃO</a></li> 
+                        </ul>
+                     <div id="btt_menu"></div>  
+                     <div id="menu_movel">
+                           <ul class="ul_menu_movel"> 
+                             <li><a  href="#divSobre">DESCRIÇÃO</a></li>
+                             <li><a  href="#divComoUsar">Como Usar</a></li>
+                             <li><a  href="#divDOWNLOAD">DOWNLOAD</a></li>
+                             <li><a  href="#divRecuros">RECURSOS</a></li>                             
+                             <li><a  href="#divDesenvolvidor">Desenvolvedor</a></li>
+                          </ul>   
+                     </div>
+                    <div id="ling_english">
+                        <select id="select_lang" class="mydropdown" onchange="seltect_language()">
+                            <option>es</option>
+                            <option>en</option>
+                            <option>fr</option>
+                            <option>it</option> 
+                            <option selected>pt</option>   
+                            <option>ru</option>
+                        </select>
+                   </div>
+              </div>
+                   
+        </header>
+        <div id="capa_espaco" class="row"> 
+            <div onclick="google_analitc(1);" class="botao"  id="btt_dow_1">
+            <img class="vertical_align1" style="margin-right: 15px" src="image/logo_windows.png" alt=""/><a onclick="event.cancelBubble = true; google_analitc(1);" class="link_download vertical_align1" href = "https://drive.google.com/uc?export=download&id=0B18mJ6syAhjZX2lsNWxzeU9DX1E">WINDOWS</a><p class="p_beta">versão 1.0 (Beta) 755KB</p></div>
+            
+            <div onclick="google_analitc(2);" class="botao" id="btt_dow_2">
+            <img class="vertical_align1" style="margin-right: 15px" src="image/logo_android.png" alt=""/><a onclick="event.cancelBubble = true; google_analitc(2);" class="link_download vertical_align1" href = "https://drive.google.com/uc?export=download&id=0B18mJ6syAhjZMS1ReW5DZ2paQWs">ANDROID</a><p class="p_beta">versão 1.0 (Beta) 1.4MB</p></div>
+        </div>   
+            
+        <div class="row">   
+            <div id="divSobre" class="row">
+                <h2 id="h3_descricon" class="aricle_tile translate">DESCRIÇÃO</h2>  
+                <p class="p_texto" style="margin-top: 5px; margin-bottom: 5px;"><b>SilFer Transferência de arquivo</b> (SFT) é o melhor aplicativo para transferir com alta velocidade os seus ficheiros entre os seus dispositivos usando o Wi-Fi. Com o SFT poderás estar conectado com todas as pessoas ao seu redor e estar a enviar e receber ficheiros, tudo ao mesmo tempo e sem espera.</p><p class="p_texto" style="margin-top: 5px; margin-bottom: 5px;"> SilFer Transferência de arquivo é muito simples de utilizar, necessitando qualquer utilizador de 15 segundos para aprender a utilizar o aplicativo.</p><p class="p_texto" style="margin-top: 5px; margin-bottom: 5px;">SilFer Transferência de arquivo tenta sempre aproveitar no máximo a capacidade dos dispositivos possibilitando assim aos utilizadores realizar transferências com altas velocidades atingindo muitas vezes dezenas de MB/s dependendo da capacidade dos dispositivos.</p><p class="p_texto" style="margin-top: 5px; margin-bottom: 5px;">O SFT faz tudo para você, a única coisa que o SFT não faz é escolher quais dispositivos conectar e selecionar quais ficheiros para enviar já que o SFT não consegue ler os seus pensamentos mas oferece para você recursos simples e robustos para completar estas tarefas em poucos segundos.</p>
+            
+            </div>
+            
+                        <div id="divComoUsar" class="row" style="padding: 0px; margin: 0px;  width: 100%;">
+                  <h2 class="aricle_tile translate">COMO USAR</h2>
+                  <h4 style="text-align: center; margin-bottom: 5px; margin-top: 0px">2º Telemóvel envia ficheiros para 1º Telemóvel</h4>
+                <div id="ce_outer">                    
+                    <div id="ce_container">
+                        <div id="ce_child" class="col2">
+                            <p class="img_descreption">1º Telemóvel</p>
+                           <img alt="Ce" class="img_slide" src="image/1.png">                             
+                        </div>
+                        <div class="col2" >
+                            <p class="img_descreption">2º Telemóvel</p>
+                             <img alt="Ce" class="img_slide" src="image/2.png">                             
+                        </div>
+                        <div class="col2" >
+                             <p class="img_descreption">1º Telemóvel</p>
+                             <img alt="Ce" class="img_slide" src="image/3.png">                             
+                        </div>
+                        <div class="col2">  
+                            <p class="img_descreption">2º Telemóvel</p>
+                             <img alt="Ce" class="img_slide" src="image/4.png">
+                        </div>
+                        <div class="col2">
+                            <p class="img_descreption">2º Telemóvel</p>
+                             <img alt="Ce" class="img_slide" src="image/5.png">                             
+                        </div>
+                        <div class="col2">
+                            <p class="img_descreption">1º Telemóvel</p>
+                             <img alt="Ce" class="img_slide" src="image/6.png">                             
+                        </div>     
+                        <div class="col2">
+                            <p class="img_descreption">1º Telemóvel</p>
+                             <img alt="Ce" class="img_slide" src="image/7.png">
+                        </div>
+                        <div class="col2">
+                            <p class="img_descreption">1º Telemóvel</p>
+                             <img alt="Ce" class="img_slide" src="image/8.png">
+                        </div>  
+                    </div>
+                </div>
+                   <h4 style="text-align: center; margin-bottom: 0px; margin-top: 80px">1º Ordinateur envoie des fichiers à la 2º Ordinateur</h4>
+                   <div id="ce_outer_v"> 
+                        <div id="ce_container_v">
+                            <div class="ce_child_v">
+                                <p class="img_descreption_pc">1º Ordinateur</p>
+                                <img alt="Melhor aplicativo para transferencia de ficheiros" class="v_img_slide" src="image/pc1.PNG.png">
+                            </div>
+                            <div class="ce_child_v" >   
+                                <p class="img_descreption_pc">2º Ordinateur</p>
+                                <img alt="Ce" class="v_img_slide" src="image/pc2.PNG.png">
+                            </div>
+                            <div class="ce_child_v" >   
+                                <p class="img_descreption_pc">2º Ordinateur</p>
+                                <img alt="Ce" class="v_img_slide" src="image/pc3.PNG.png">
+                            </div>
+                            <div class="ce_child_v" >
+                                <p class="img_descreption_pc">1º Ordinateur</p>
+                                <img alt="Ce" class="v_img_slide" src="image/pc4.PNG">
+                            </div>
+                            <div class="ce_child_v" >  
+                                <p class="img_descreption_pc">2º Ordinateur</p>
+                                <img alt="Ce" class="v_img_slide" src="image/pc5.PNG.png">
+                            </div>
+                            <div class="ce_child_v">
+                                 <p class="img_descreption_pc">1º Ordinateur</p>
+                                <img alt="Ce" class="v_img_slide" src="image/pc6.PNG.png">
+                            </div>
+                            <div class="ce_child_v">
+                                <p class="img_descreption_pc">2º Ordinateur</p>
+                                <img alt="Ce" class="v_img_slide" src="image/pc7.PNG.png">
+                            </div>
+                        </div>
+                   </div>
+                   <div class="row" style="margin-top: 60px;">
+                       <h4 style="text-align: center; margin-bottom: 0px; margin-top: 80px">Selecionador de arquivos do SFT no Android</h4>
+                           <iframe id="iframe_video_flp" class="h_center" src="https://www.youtube.com/embed/RCXNlNCMNnM?cc_load_policy=1">
+                           </iframe>
+                       
+                       <h1 style="text-align: center; margin-bottom: 0px; margin-top: 80px; font-size: 13pt">SilFer Transferência de arquivo no Microsoft Windows</h1>
+                           <iframe id="iframe_video_windows" class="h_center" src="https://www.youtube.com/embed/rvQaqk5250s?cc_load_policy=1">
+                           </iframe>
+                   </div>
+            </div> 
+            
+            <div div id="divDOWNLOAD" class="row" style="margin-top:80px">            
+                <div id="dow_img1"></div>
+                <div id="dow_img2"  class="bottom_aligner">            
+              </div>
+                <h3 id="h3_download">DOWNLOAD</h3>
+                 <div id="dow_img1_espaco">
+        
+        <div  onclick="google_analitc(3);" class="botao translate"  id="btt_dow_3">
+            <img class="vertical_align1" style="margin-right: 15px" src="image/logo_windows.png" alt=""/><a onclick="event.cancelBubble = true; google_analitc(3);" class="link_download vertical_align1">WINDOWS</a></div>
+            <div onclick="google_analitc(4);" class="botao translate" id="btt_dow_4" >
+            <img class="vertical_align1" style="margin-right: 15px" src="image/logo_android.png" alt=""/><a onclick="event.cancelBubble = true; google_analitc(4);" class="link_download vertical_align1">ANDROID</a></div>
+            </div>        
+           
+            <div id="divRECURSOS">
+                 <h2 class="aricle_tile translate">RECURSOS</h2>
+                <div  style="padding-top: 0px">
+                <ul class="ul_recursos">
+                    <li>Único aplicativo que suporta múltiplas (envio e/ou receção) transferências entre múltiplos dispositivos. Com o SFT um dispositivo pode estar a enviar ficheiros a múltiplos dispositivos ao mesmo tempo, e também nesse mesmo instante o dispositivo poderá estar a receber ficheiros de múltiplos dispositivos.</li>
+                    <li>Um dispositivo poderá enviar e estar a receber arquivos com o mesmo dispositivo e no mesmo instante. Se um dispositivo  está enviando 10GB para outro dispositivo, e o outro dispositivo também quer enviar 100 MB, não há que esperar, basta efetuar mais uma nova conexão e pronto.</li>
+                    <li>O SFT é o único que permite um utilizador trocar mensagens de texto (Chat). Este recurso é muito importante quando se usa o SFT em grandes empresas, prédios ou em universidades já que com o SFT você poderá estar facilmente ligado com todos as pessoas ao seu redor. Assim quando necessitar de um ficheiro não é preciso gritar ou ir até a pessoa desejada para pedir o ficheiro. Envia uma mensagem “preciso de um ficheiro XYZ”.</li>
+                    <li>O SFT possui a melhor ferramenta para escolher os seus ficheiros. Com o selecionador de ficheiros você poderá ver suas fotos, reproduzir áudio e vídeo e ainda pesquisar por qualquer ficheiro. Assim você poderá dizer ao SFT que deseja ver todas as músicas cujo título contem a palavra “paixão”.</li>
+                    <li>Dá o utilizador a liberdade sempre de escolher o local onde os ficheiros serão recebidos. Este recurso é muito importante já que todo o utilizador sempre deseja ter cada tipo de ficheiro num local específico evitando assim bagunças.</li>
+                     <li>Possibilita ao utilizador escolher ficheiros uma vez e enviar a múltiplos dispositivos ao mesmo tempo. Muito importante quando o utilizador precisa de enviar os mesmos ficheiros para múltiplos dispositivos. Em vez de selecionar os mesmos arquivos 100 vezes para enviar a 100 dispositivos, seleciona 1 vez e envia a 100 dispositivos.</li>
+                    <li>Suporta a continuidade de transferência em qualquer momento. Muito importante em casos de erros, quando um ficheiro já existe no dispositivo do recetor ou quando um utilizador tiver por exemplo 300GB para enviar, então envias 150GB num momento e enviarás o restante num outro momento, dia, mês até mesmo ano.</li>
+                    <li>Oferece informações relevantes da transferência antes do utilizador aceitar a transferência. É sempre importante saber quantos ficheiros, o tamanho total, e quem enviou os ficheiros antes de aceitar a transferência.</li>
+                     <li>Permite ao utilizador enviar ficheiros sobre qualquer rede (WiFi, Ethernet, …). Somente sobre as redes moveis que o SFT não permite por motivos de segurança, mas essa funcionalidade poderá ser ativada nas próximas versões.</li>
+                    <li>Permite ao utilizador aceitar conexões automaticamente ou manualmente. Isto porque SFT é como um aplicativo de Chat, em que os utilizadores estabelecem sessões facilmente e enviam mensagens (ficheiros) em qualquer momento.</li>
+                    <li>Suporta o envio de qualquer tipo de ficheiro e de qualquer tamanho.</li>
+                </ul>
+            </div>
+            </div> 
+
+             <div id="divDesenvolvidor" class="row" >
+                  <h2 class="aricle_tile translate" style=" margin-bottom: 100px">Sobre Desenvolvedor</h2>
+                
+                 <div style="position: relative">
+                      <div id="div_desen_foto">
+                        <!-- <img  src="ce.PNG" alt="ce" width="150px">-->
+                         
+                      </div>
+                 </div>
+                 
+                  <div id="div_desen_container"> 
+                      <div class="col-12">
+                          <p style="text-align: center; color: white" class="translate">Nome: António Celso Silva Fernandes</p>
+                          <p style="text-align: center; color: white" >Email: antonio@cvsilfer.com</p>
+                          <p style="text-align: center; color: white">Nacionalidade: Cabo-Verdiano</p>
+                     </div>
+                 </div>       
+            </div> 
+       </div>          
+        
+       <div id="btt_scroll_top"></div>    
+            <script>
+            function google_analitc(op) {
+              if(op == 1)
+              {
+                    ga('send', 'event', 'Downloads', 'Windows', 'Download Windows');
+                    location.href = "https://drive.google.com/uc?export=download&id=0B18mJ6syAhjZX2lsNWxzeU9DX1E";
+              }
+              else if(op == 2)
+              {
+                     ga('send', 'event', 'Downloads', 'Android', 'Download Android');
+                     location.href = "https://drive.google.com/uc?export=download&id=0B18mJ6syAhjZMS1ReW5DZ2paQWs";
+              }
+              else if(op == 3)
+              {
+                    ga('send', 'event', 'Downloads', 'Windows', 'Download Windows 1');
+                    location.href = "https://drive.google.com/uc?export=download&id=0B18mJ6syAhjZX2lsNWxzeU9DX1E"; 
+              }
+               else if(op == 4)
+              {                  
+                  
+                   ga('send', 'event', 'Downloads', 'Android', 'Download Android');
+                     location.href = "https://drive.google.com/uc?export=download&id=0B18mJ6syAhjZMS1ReW5DZ2paQWs";
+              }
+            }
+                
+            function seltect_language() {
+                var lang = document.getElementById("select_lang").value;                
+               
+                if (lang == "pt")
+                    ;
+                else if(lang == "en")
+                    lang="SilFer-file-transfer";
+                else if(lang == "es")
+                    lang="SilFer-Transferencia-archivos";
+                 else if(lang == "fr")
+                    lang="SilFer-transfert-fichier";
+                 else if(lang == "it")
+                    lang="SilFer-Trasferimento-file";
+                else if(lang == "ru")
+                    lang="SilFer-Передача-файла";
+                    
+                    window.location=lang+".html";
+           }    
+                
+            </script>
+    </body>
+    
+</html>
+
+
+      
+
