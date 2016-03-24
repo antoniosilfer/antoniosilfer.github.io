@@ -1,33 +1,4 @@
- function preloadFunc()
-            {
-                var lang ="";
-                if(navigator.language.length > 2)
-                    lang = ""+navigator.language.substring(0, 2);
-                else
-                    lang = navigator.language;
-                
-              var page = "";
-                if (lang == "en")                   
-                     return;  
-                else if (lang == "fr")
-                    page="SilFer-transfert-fichier";
-                else if(lang == "es")
-                    page="SilFer-Transferencia-archivos";
-                 else if(lang == "pt")
-                    page="SilFer-transferencia-arquivo";
-                else if(lang == "ru")
-                    page="SilFer-Передача-файла";
-                
-                    
-                    window.location=page+".html";
-                    
-                    
- }
- preloadFunc();
-            
-            
-            
-            
+     
             
        $(document).ready(function(){          
             $('#menu_movel').slideToggle(0);
