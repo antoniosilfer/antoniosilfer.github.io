@@ -40,260 +40,18 @@
         <script async src='//www.google-analytics.com/analytics.js'></script>    
         
        
-        <script>
-            
-         
-       $(document).ready(function(){                  
-           
-               
-           
-           
-               $('a').click(function(){
-                $('html, body').animate({
-                    scrollTop: $( $.attr(this, 'href') ).offset().top - 60
-                }, 1000); 
-                return false;
-            });
-           
-            $('#menu_movel').slideToggle(600);
-           
-           $('#menu_movel a').click(function(){
-               $('#menu_movel').slideToggle(600);
-           });
-           
-           
-           $('#btt_scroll_top').hide();  
-           
-          
-           
-            $('#btt_menu').click(function(){
-                $('#menu_movel').slideToggle(600);
-            });
-           
-           
-           var lastScrollTop = 0;
-          
-           $(window).scroll(function() { 
-               var current_position = $(this).scrollTop();
-             if(current_position > $(window).height()/2) { 
-                  if($("#c_header").css('backgroundColor').toLowerCase() != 'rgb(255, 255, 255)')
-                  {
-                    
-                      $('#c_header').css({ transition: '700ms'}); 
-                      $('#c_header').css({ backgroundColor: 'white', "color":"rgb(150,150,150)"  }); 
-                      $('#page_title').css({ "color":"rgb(0,109,255)"});   
-                      $('#btt_menu').css({"background-image": "url(image/menu_movel_mycolor.png)"});  //menu_movel_mycolor 
-                       
-                  }menu_movel
-                 
-             } 
-            else{
-                
-                  if($("#c_header").css('backgroundColor').toLowerCase() != 'rgba(0, 0, 0, 0)'){
-                     $('#c_header').css({  transition: '700ms'}); 
-                     $('#c_header').css({"color":"white", "background-color":"transparent"});
-                     $('#page_title').css({ "color":"white"}); 
-                     $('#btt_menu').css({"background-image": "url(image/menu_movel.png)"});//menu_movel
-                  }
-                
-                 
-                 
-            }   
-               
-               if(current_position > $("#capa").height()) {
-                    $('#c_header').addClass("c_header_1");                    
-               }
-               else{
-                     $('#c_header').removeClass("c_header_1");      
-                    $('#btt_scroll_top').hide();  
-                   } 
-               
-               if ($('#menu_movel').is(':visible')) {
-                    $('#menu_movel').slideUp();
-                }
-               
-               if(current_position > $(window).height())
-                   {
-                       if( lastScrollTop < current_position)
-                           {
-                               if ($('#c_header').is(':visible')) {
-                                    $('#c_header').css({ transition: '0s'});   
-                                    $('#c_header').slideUp();
-                                    $('#btt_scroll_top').hide();  
-                                }
-                           }
-                       else{
-                           
-                            if ($('#c_header').is(':visible') == false) {
-                                 $('#c_header').css({ transition: '0s'});  
-                                    $('#c_header').slideDown();
-                                  $('#btt_scroll_top').show();  
-                                }
-                       }
-                   }
-              
-              lastScrollTop =current_position; 
-               
-
-
-                $('.translate').each( function(i){
-
-                    var bottom_of_object = $(this).offset().top + $(this).outerHeight();
-                    var bottom_of_window = $(window).scrollTop() + $(window).height();
-
-                    /* If the object is completely visible in the window, fade it it */
-                    if( bottom_of_window > bottom_of_object){
-
-                        $(this).css({transform: 'translate3d(0, 0, 0)', opacity: '1'});
-
-                    }
-
-
-                }); 
-               
-               var docViewTop = $(window).scrollTop();
-               var docViewBottom = docViewTop + $(window).height();
-               
-               if($('#divSobre').offset().top - 200 <= docViewTop && $('#divSobre').offset().top + $('#divSobre').height() - 200 > docViewTop )
-              {
-                    
-                      $('#SOBRE').addClass("li_menu_pc_selected");
-                      $('#DOWNLOAD').removeClass("li_menu_pc_selected");
-                      $('#RECURSOS').removeClass("li_menu_pc_selected");
-                      $('#how_use').removeClass("li_menu_pc_selected");
-                      $('#developer').removeClass("li_menu_pc_selected");
-                   
-              }
-               else  if($('#divDOWNLOAD').offset().top  - 200 <= docViewTop && $('#divRECURSOS').offset().top - 200> docViewTop )              {                   
-                     $('#SOBRE').removeClass("li_menu_pc_selected");
-                      $('#DOWNLOAD').addClass("li_menu_pc_selected");
-                      $('#RECURSOS').removeClass("li_menu_pc_selected"); 
-                      $('#how_use').removeClass("li_menu_pc_selected");
-                      $('#developer').removeClass("li_menu_pc_selected");
-               }
-            else if($('#divRECURSOS').offset().top - 200 <= docViewTop && $('#divComoUsar').offset().top  -200 > docViewTop )              {  
-             
-                    $('#SOBRE').removeClass("li_menu_pc_selected");
-                      $('#DOWNLOAD').removeClass("li_menu_pc_selected");
-                      $('#RECURSOS').addClass("li_menu_pc_selected");
-                      $('#how_use').removeClass("li_menu_pc_selected"); 
-                      $('#developer').removeClass("li_menu_pc_selected");
-               }
-                 else  if($('#divComoUsar').offset().top -200 <= docViewTop && $('#divDesenvolvidor').offset().top -300  > docViewTop )      {   
-                    $('#SOBRE').removeClass("li_menu_pc_selected");
-                      $('#DOWNLOAD').removeClass("li_menu_pc_selected");
-                      $('#RECURSOS').removeClass("li_menu_pc_selected");
-                      $('#how_use').addClass("li_menu_pc_selected");
-                      $('#developer').removeClass("li_menu_pc_selected");
-               }
-             else  if($('#divDesenvolvidor').offset().top -300 <= docViewTop)              {  
-                 
-                    $('#SOBRE').removeClass("li_menu_pc_selected");
-                      $('#DOWNLOAD').removeClass("li_menu_pc_selected");
-                      $('#RECURSOS').removeClass("li_menu_pc_selected");
-                      $('#how_use').removeClass("li_menu_pc_selected");
-                      $('#developer').addClass("li_menu_pc_selected");
-               }
-               else
-                   {
-                     $('#SOBRE').removeClass("li_menu_pc_selected");
-                      $('#DOWNLOAD').removeClass("li_menu_pc_selected");
-                      $('#RECURSOS').removeClass("li_menu_pc_selected");
-                      $('#how_use').removeClass("li_menu_pc_selected");
-                      $('#developer').removeClass("li_menu_pc_selected"); 
-                   }
-               
-        });  
-   
-          /* var width = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
-            
-             /*//////////////////////////////////////////////////////////////////////////////////*/
-            
-           $("#btt_scroll_top").click(function() {
-            $('html, body').animate({
-                scrollTop: $("#capa").offset().top
-            }, 700);
-           });
-           
-           
-           
-           
-           
-       });
-       
-            function onload_all() {
-               var tamanho = 0;
-               var ce_container = $("#ce_container").width();
-               var width = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
-               var child_width = $("#ce_child").width();
-               var translate = 0;
-           
-               var v_translate = 0;
-               var v_ce_container = $("#ce_container_v").height();
-               var height = $("#ce_outer_v").height();
-           
-             setInterval(function(){  
-                 if(width > 1200){
-                         
-                        $("#ce_container").css({transform: 'translate3d(-'+translate+'px, 0, 0)'});
-
-                          if(translate +100 >=  ce_container - 4 * child_width)
-                            translate = 0;   
-                          else
-                               translate = translate + child_width;
-                      }                 
-                 else if(width > 800){
-                         
-                          $("#ce_container").css({transform: 'translate3d(-'+translate+'px, 0, 0)'});
-
-                          if(translate >=  ce_container - 3 * child_width)
-                            translate = 0;   
-                          else
-                               translate = translate + child_width;
-                      }
-                    else if (width > 550){
-                        
-                              $("#ce_container").css({transform: 'translate3d(-'+translate+'px, 0, 0)'});
-
-                              if(translate + 100 >= (ce_container - 2 * child_width))
-                                  translate = 0;   
-                              else
-                                   translate = translate + child_width;
-                        }
-                 else{
-                       $("#ce_container").css({transform: 'translate3d(-'+translate+'px, 0, 0)'});
-
-                              if(translate + 100 >= (ce_container - child_width))
-                                  translate = 0;   
-                              else
-                                   translate = translate + child_width;
-                 }
-                 
-                 
-                 $("#ce_container_v").css({transform: 'translate3d(0, -'+v_translate+'px, 0)'});
-                 if(v_translate + height + 100 < v_ce_container )
-                     v_translate = v_translate + height;
-                 else
-                    v_translate = 0;                 
-
-             
-             }, 2500); 
-               
-           }
-                       
-            
-        </script>
+ 
         
     </head>
     <body  onload="onload_all()">
         <div id="capa">
-            <img id="img_pc_windows" class="v_img_slide" src="image/pc_windows1.png"  alt="">
-             <img id="img_phone_android" class="v_img_slide" src="image/eng/phone_android.png"  alt="">
+            <img id="img_pc_windows" class="v_img_slide" src="image/pc_windows1.png"  alt="Лучшее приложение для передачи файлов с помощью беспроводной связи на Android">
+             <img id="img_phone_android" class="v_img_slide" src="image/eng/phone_android.png"  alt="Лучшая программа для передачи файлов с помощью беспроводной связи на Android">
         </div>
         <div id="capa_over">          
         </div>
         <header >  
-               <div>
+              
                <div id="c_header"> 
                     <h3 id="page_title">SFT</h3>                  
                     
@@ -314,25 +72,23 @@
                              <li><a  href="#divDesenvolvidor">ДЕВЕЛОПЕР</a></li>
                           </ul>   
                      </div>
-                    <div id="ling_english">
-                        <select id="select_lang" class="mydropdown" onchange="seltect_language()">                            
-                            <option>es</option>
-                            <option>en</option>
-                            <option>fr</option>
-                            <option>it</option> 
-                            <option>pt</option> 
-                            <option selected>ru</option> 
-                        </select>
-                   </div>
+                    <div id="btt_language" onclick="btt_language();">Pусский</div> 
+                    <ul id="ul_language"> 
+                             <li><a  href="SilFer-file-transfer.html">English</a></li>
+                             <li><a  href="SilFer-Transferencia-archivos.html">Español</a></li>
+                             <li><a  href="SilFer-Transfert-Fichier.html">Français</a></li>
+                             <li><a  href="SilFer-Trasferimento-file.html">Italiano</a></li>
+                             <li><a  href="SilFer-transferencia-arquivo.html">Português</a></li>                             
+                   </ul>    
               </div>
                    
         </header>
         <div id="capa_espaco" class="row"> 
             <div onclick="google_analitc(1);" class="botao"  id="btt_dow_1">
-            <img class="vertical_align1" style="margin-right: 15px" src="image/logo_windows.png" alt=""/><a onclick="event.cancelBubble = true; google_analitc(1);" class="link_download vertical_align1" href = "https://drive.google.com/uc?export=download&id=0B18mJ6syAhjZX2lsNWxzeU9DX1E">WINDOWS</a><p class="p_beta">versão 1.0 (Beta) 755KB</p></div>
+            <img class="vertical_align1" style="margin-right: 15px" src="image/logo_windows.png" alt="беспроводной передачи файлов в Windows"/><a onclick="event.cancelBubble = true; google_analitc(1);" class="link_download vertical_align1" href = "https://drive.google.com/uc?export=download&id=0B18mJ6syAhjZX2lsNWxzeU9DX1E">WINDOWS</a><p class="p_beta">versão 1.0 (Beta) 0.8МБ</p></div>
             
             <div onclick="google_analitc(2);" class="botao" id="btt_dow_2">
-            <img class="vertical_align1" style="margin-right: 15px" src="image/logo_android.png" alt=""/><a onclick="event.cancelBubble = true; google_analitc(2);" class="link_download vertical_align1" href = "https://drive.google.com/uc?export=download&id=0B18mJ6syAhjZMS1ReW5DZ2paQWs">ANDROID</a><p class="p_beta">versão 1.0 (Beta) 1.4MB</p></div>
+            <img class="vertical_align1" style="margin-right: 15px" src="image/logo_android.png" alt="Общий доступ к файлам с помощью беспроводной в Android"/><a onclick="event.cancelBubble = true; google_analitc(2);" class="link_download vertical_align1" href = "https://drive.google.com/uc?export=download&id=0B18mJ6syAhjZMS1ReW5DZ2paQWs">ANDROID</a><p class="p_beta">versão 1.0 (Beta) 1.5МБ</p></div>
         </div>   
             
         <div class="row">   
@@ -349,35 +105,35 @@
                     <div id="ce_container">
                         <div id="ce_child" class="col2">
                             <p class="img_descreption">1º Телефон</p>
-                           <img alt="Ce" class="img_slide" src="image/1.png">                             
+                           <img alt="Передача файлов с помощью Wi-Fi" class="img_slide" src="image/ru/1.png">                             
                         </div>
                         <div class="col2" >
                             <p class="img_descreption">2º Телефон</p>
-                             <img alt="Ce" class="img_slide" src="image/2.png">                             
-                        </div>
-                        <div class="col2" >
-                             <p class="img_descreption">1º Телефон</p>
-                             <img alt="Ce" class="img_slide" src="image/3.png">                             
+                             <img alt="совместного использования файлов в любой сети" class="img_slide" src="image/2.png">                             
                         </div>
                         <div class="col2">  
                             <p class="img_descreption">2º Телефон</p>
-                             <img alt="Ce" class="img_slide" src="image/4.png">
+                             <img alt="Передача файлов с помощью Wi-Fi Direct на Android" class="img_slide" src="image/4.png">
                         </div>
                         <div class="col2">
                             <p class="img_descreption">2º Телефон</p>
-                             <img alt="Ce" class="img_slide" src="image/5.png">                             
+                             <img alt="Отправить файл с помощью Wi-Fi прямой" class="img_slide" src="image/5.png">                             
                         </div>
                         <div class="col2">
                             <p class="img_descreption">1º Телефон</p>
-                             <img alt="Ce" class="img_slide" src="image/6.png">                             
+                             <img alt="Беспроводной прямой передачи файлов" class="img_slide" src="image/ru/6.png">                             
                         </div>     
                         <div class="col2">
                             <p class="img_descreption">1º Телефон</p>
-                             <img alt="Ce" class="img_slide" src="image/7.png">
+                             <img alt="лучшее приложение для передачи файлов Wi-Fi на Android" class="img_slide" src="image/ru/7.png">
+                        </div>                        
+                        <div class="col2" >
+                             <p class="img_descreption">1º Телефон</p>
+                             <img alt="лучшее приложение для передачи файлов с помощью WiFi прямой" class="img_slide" src="image/3.png">  
                         </div>
                         <div class="col2">
                             <p class="img_descreption">1º Телефон</p>
-                             <img alt="Ce" class="img_slide" src="image/8.png">
+                             <img alt="Silfer передачи файлов" class="img_slide" src="image/8.png">
                         </div>  
                     </div>
                 </div>
@@ -386,31 +142,31 @@
                         <div id="ce_container_v">
                             <div class="ce_child_v">
                                 <p class="img_descreption_pc">1º Компьютер</p>
-                                <img alt="Melhor aplicativo para transferencia de ficheiros" class="v_img_slide" src="image/pc1.PNG.png">
+                                <img alt="Лучшее приложение для передачи файлов В системе Windows" class="v_img_slide" src="image/pc1.PNG.png">
                             </div>
                             <div class="ce_child_v" >   
                                 <p class="img_descreption_pc">2º Компьютер</p>
-                                <img alt="Ce" class="v_img_slide" src="image/pc2.PNG.png">
+                                <img alt="Лучшее приложение для обмена файлами В системе Windows" class="v_img_slide" src="image/pc2.PNG.png">
                             </div>
                             <div class="ce_child_v" >   
                                 <p class="img_descreption_pc">2º Компьютер</p>
-                                <img alt="Ce" class="v_img_slide" src="image/pc3.PNG.png">
+                                <img alt="Отправить файл с высокой скоростью, используя беспроводной прямо на окнах" class="v_img_slide" src="image/pc3.PNG.png">
                             </div>
                             <div class="ce_child_v" >
                                 <p class="img_descreption_pc">1º Компьютер</p>
-                                <img alt="Ce" class="v_img_slide" src="image/pc4.PNG">
+                                <img alt="Передача файлов с высокой скоростью, используя беспроводной прямо на Windows" class="v_img_slide" src="image/pc4.PNG">
                             </div>
                             <div class="ce_child_v" >  
                                 <p class="img_descreption_pc">2º Компьютер</p>
-                                <img alt="Ce" class="v_img_slide" src="image/pc5.PNG.png">
+                                <img alt="Передача файлов на высокой скорости, используя Wi-Fi В системе Windows" class="v_img_slide" src="image/pc5.PNG.png">
                             </div>
                             <div class="ce_child_v">
                                  <p class="img_descreption_pc">1º Компьютер</p>
-                                <img alt="Ce" class="v_img_slide" src="image/pc6.PNG.png">
+                                <img alt="Лучшее приложение для отправки файлов В системе Windows" class="v_img_slide" src="image/pc6.PNG.png">
                             </div>
                             <div class="ce_child_v">
                                 <p class="img_descreption_pc">2º Компьютер</p>
-                                <img alt="Ce" class="v_img_slide" src="image/pc7.PNG.png">
+                                <img alt="Отправить файл на высокой скорости, используя беспроводную связь В системе Windows" class="v_img_slide" src="image/pc7.PNG.png">
                             </div>
                         </div>
                    </div>
@@ -478,52 +234,8 @@
        </div>          
         
        <div id="btt_scroll_top"></div>    
-            <script>
-            function google_analitc(op) {
-              if(op == 1)
-              {
-                    ga('send', 'event', 'Downloads', 'Windows', 'Download Windows');
-                    location.href = "https://drive.google.com/uc?export=download&id=0B18mJ6syAhjZX2lsNWxzeU9DX1E";
-              }
-              else if(op == 2)
-              {
-                     ga('send', 'event', 'Downloads', 'Android', 'Download Android');
-                     location.href = "https://drive.google.com/uc?export=download&id=0B18mJ6syAhjZMS1ReW5DZ2paQWs";
-              }
-              else if(op == 3)
-              {
-                    ga('send', 'event', 'Downloads', 'Windows', 'Download Windows 1');
-                    location.href = "https://drive.google.com/uc?export=download&id=0B18mJ6syAhjZX2lsNWxzeU9DX1E"; 
-              }
-               else if(op == 4)
-              {                  
-                  
-                   ga('send', 'event', 'Downloads', 'Android', 'Download Android');
-                     location.href = "https://drive.google.com/uc?export=download&id=0B18mJ6syAhjZMS1ReW5DZ2paQWs";
-              }
-            }
-                
-            function seltect_language() {
-                var lang = document.getElementById("select_lang").value;                
-               
-                if (lang == "ru")
-                    ;
-                else if(lang == "en")
-                    lang="SilFer-file-transfer";
-                else if(lang == "es")
-                    lang="SilFer-Transferencia-archivos";
-                 else if(lang == "fr")
-                    lang="SilFer-transfert-fichier";
-                 else if(lang == "it")
-                    lang="SilFer-Trasferimento-file";
-                else if(lang == "pt")
-                    lang="SilFer-transferencia-arquivo";
-                    
-                    window.location=lang+".html";
-                
-           }    
-                
-            </script>
+    
+            <script src="page.js"></script>
     </body>
     
 </html>

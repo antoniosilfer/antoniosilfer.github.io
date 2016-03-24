@@ -96,12 +96,15 @@ body {
     background-image: url(image/menu_movel.png);
     background-color: transparent;
     position: absolute;
-    right: 100px;
+    right: 110px;
     top: 10px;
     visibility: hidden;
     background-size: 100% 100%;    
+    cursor: pointer; 
    
 }
+
+
 
 .row{
     margin: 0px;  
@@ -133,11 +136,13 @@ body {
     
 }
 
-#ling_english{
+#btt_language{
    position: absolute;
    right: 20px;
    top: 15px;  
-  z-index: 2;    
+   z-index: 2; 
+   cursor: pointer;   
+   color: rgb(0,160,230);
 }
 
 .p_texto{
@@ -239,24 +244,63 @@ li a:hover {
 
 
 #menu_movel{
+    visibility: hidden;
     position: absolute;
     right: 10px;
     margin-top: 0px;
     padding: 0px;
     top: 10px;
     margin-top: 27px;
-    visibility: hidden;
+    
 }
 
 .ul_menu_movel li{
-    background-color: rgb(240, 240, 240);
+    background-color: rgb(0, 109, 255);
     display:block;
     float: none;
     padding-left: 0px;
     padding-right: 0px;
     margin: 0px;
-   
+   width: 100%;
 }
+
+
+#ul_language{
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    visibility: hidden;
+    
+}
+
+#ul_language li{
+    background-color: rgb(0, 109, 255);
+    display:block;    
+    float: none;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    color: white;
+}
+
+#ul_language li:hover {
+     background-color: white;
+    color: rgb(0, 109, 255);
+}
+
+#ul_language li a{
+    display:block;
+    float: none;
+    margin: 0px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 0px;
+    font-size: 15px; 
+    color: inherit;
+    background-color: inherit;
+}
+
+
 
 .ul_menu_movel li a{
     display:block;
@@ -266,7 +310,7 @@ li a:hover {
     padding-left: 30px;  
     padding-right: 30px;
     font-size: 15px;    
-    color: black;
+    color: white;
 }
 
 div#capa{
@@ -851,11 +895,13 @@ img {
           visibility: visible;
    }
     
+    #btt_language{
+        top: 20px;
+    }
+    
    
      
-     #menu_movel{   
-       visibility: visible;
-    }
+    
     
     #btt_dow_1
     {
@@ -959,9 +1005,7 @@ img {
                      height: 45px;
                  }
                  
-                 #menu_movel{   
-                    visibility: visible;
-                }
+                
      
                
                   
@@ -1063,13 +1107,7 @@ img {
        
     #page_title{
           margin-left: 40px;         
-    }
-    
-     #btt_menu{
-         right: 90px;
-    }
-    
-        
+    } 
 
 }
 
