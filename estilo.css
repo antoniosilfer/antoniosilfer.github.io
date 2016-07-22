@@ -269,7 +269,7 @@ body{
 #dow_img1{ 
     position: absolute;
     background-attachment: fixed;
-    background-image: url(home.png);
+    background-image: url(image/home.png);
     height: 400px;
     background-repeat: no-repeat;
     background-position: center;
