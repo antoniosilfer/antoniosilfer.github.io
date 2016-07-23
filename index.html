@@ -34,8 +34,10 @@
         <meta property="og:image:secure_url"  content="https://lh3.googleusercontent.com/-o6GgEkdFYT0/VuNJ7e-ZKII/AAAAAAAAALM/8aelOzQXCBwT-y3Ijghn2U4-jPsoIu1hgCCo/I-Ic42/silfer600.png"/>
         <meta property="og:site_name" content="SilFer File Transfer"/>
   
-        <script>
-              var lang ="";
+         <script>
+         function preloadFunc()
+         {
+                var lang ="";
                 if(navigator.language.length > 2)
                     lang = ""+navigator.language.substring(0, 2);
                 else
@@ -55,15 +57,18 @@
                 
                     
                     window.location=page+".html";
-            
-            
+                    
+                    
+          }
+         preloadFunc();
             
             
             window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
             ga('create', 'UA-73977126-1', 'auto');
-            ga('send', 'pageview');
-            </script>
-        <script async src='//www.google-analytics.com/analytics.js'></script>    
+            ga('send', 'pageview');           
+       
+        </script>
+        <script async src='//www.google-analytics.com/analytics.js'></script>     
     </head>
     <body onload="onload_all()">
         <div id="btt_language" onclick="btt_language();"><img src="image/English.png" height="28px"></div> 
