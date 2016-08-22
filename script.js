@@ -169,7 +169,7 @@
               {
                      ga('send', 'event', 'Downloads', 'Android', 'Download Android');
                     if(op == 22)
-                     location.href = "https://github.com/antoniosilfer/antoniosilfer.github.io/blob/master/download/SilFerFileTransfer.apk?raw=true";
+                     location.href = "https://play.google.com/store/apps/details?id=com.silfer.silferfiletransfer";
               }
               else if(op == 3 || op == 33)
               {
@@ -184,7 +184,7 @@
                   
                    ga('send', 'event', 'Downloads', 'Android', 'Download Android');
                        if(op == 44)
-                     location.href = "https://github.com/antoniosilfer/antoniosilfer.github.io/blob/master/download/SilFerFileTransfer.apk?raw=true";
+                            location.href = "https://play.google.com/store/apps/details?id=com.silfer.silferfiletransfer";
               }
             }
             
