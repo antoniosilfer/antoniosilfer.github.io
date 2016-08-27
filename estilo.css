@@ -303,6 +303,15 @@ body{
     
 }
 
+.title_video{
+    font-size: 150%;
+    margin-bottom: 5px;
+    margin-top: 80px;
+    text-align: center;
+    color: rgb(0,128,255);
+    width: 100%;
+}
+
 
 
 
@@ -418,14 +427,13 @@ body{
     max-height: 95vh;
 }
 
-#iframe_video_windows{  
-    margin-top: 80px;
+#iframe_video_windows{
     width: 100%;
-    max-width: 657px;
+    max-width: 680px;
     height: 100vh;
-    max-height: 291px;
+    max-height: 800px;
     background-color: rgb(150,150,150);
-    border-width: 0px;
+    border-width: 0px;     
 }
 
 #div_social_media{
@@ -813,6 +821,10 @@ body{
     .aricle_tile{
         font-size: 150%;
         }
+    
+    .title_video{
+        font-size: 120%;
+    }
     
                 .p_texto{
                     margin-left: 12%;
