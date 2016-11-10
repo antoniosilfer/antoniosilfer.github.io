@@ -158,7 +158,26 @@
 
 /*---------------------------------------------------------------------------------------------------------------------------------*/
  function google_analitc(op) {
-              if(op == 1 || op == 11)
+     if(op == 1)
+         ga('send', 'event', 'Downloads', 'Windows', 'home');
+     else if(op == 11)
+         ga('send', 'event', 'Downloads', 'Windows', 'down');
+     else if(op == 2)
+         ga('send', 'event', 'Downloads', 'Android', 'home');
+     else if(op == 22)
+         ga('send', 'event', 'Downloads', 'Android', 'down');
+      else if(op == 3)
+         ga('send', 'event', 'Downloads', 'Mac', 'home');
+     else if(op == 33)
+         ga('send', 'event', 'Downloads', 'Mac', 'down');
+     else if(op == 4)
+         ga('send', 'event', 'Downloads', 'Linux', 'home');
+     else if(op == 44)
+         ga('send', 'event', 'Downloads', 'Linux', 'down');
+     
+     
+     
+     /* if(op == 1 || op == 11)
               {
                     ga('send', 'event', 'Downloads', 'Windows', 'Download Windows');
                 
@@ -185,6 +204,6 @@
                    ga('send', 'event', 'Downloads', 'Android', 'Download Android');
                        if(op == 44)
                             location.href = "https://play.google.com/store/apps/details?id=com.silfer.silferfiletransfer";
-              }
+              }*/
             }
             
