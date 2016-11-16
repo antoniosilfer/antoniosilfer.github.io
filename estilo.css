@@ -1172,6 +1172,16 @@ body{
     }
 }
 
+@media only screen and (max-height: 450px) {
+  #d_home_l{
+        display: none;
+    }
+    
+    #d_home_r, #div_dow_capa{
+        width: 100%; 
+    }
+}
+
 
 
 
