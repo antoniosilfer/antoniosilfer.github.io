@@ -1,0 +1,15 @@
+What Kind of Information We Collect
+  - Personal Information
+     	SilFer File Transfer does not collect Personal Information.
+
+  -	Non-Personal Information
+	The application collects anonymous data when a user uses the application. 
+	This data is given as errors that occur in the application, and data related
+	to the user's interaction with the application. The collection includes data 
+	such as country, language, device model, device version, screen resolution.
+
+
+
+How are these data used?
+	The data collected is used to improve the application. 
+	These data despite being anonymous will always be kept private.
