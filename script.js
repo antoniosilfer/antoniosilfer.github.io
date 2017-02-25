@@ -4,9 +4,38 @@
            /* $('#menu_movel').slideToggle(0);
             $('#menu_movel').css({ visibility: 'visible'}); */
            
+           
+           
             $('#ul_language').slideToggle(0);
             $('#ul_language').css({ visibility: 'visible'}); 
-            
+           
+          
+            $('#ul_language').css({ height: 'visible'});            
+           
+                      
+            if($('#home').height()/window.innerHeight < 0.5) {
+            $('#home').css("height", window.innerHeight); 
+            $('#d_home_r').css("height", window.innerHeight*0.2); 
+            $('#img_phone_android').css("min-height", window.innerHeight*0.8);
+            $('#img_phone_android').css("margin-top", window.innerHeight*0.1);
+            $('#p_home_1').css("margin-bottom", window.innerHeight*0.2); 
+            $('#ce_outer_v').css("height", window.innerHeight*0.6);
+            $('.img_slide').css("max-height", window.innerHeight*0.95); 
+            $('#iframe_video_windows').css("height", window.innerHeight); 
+            if(window.innerWidth <= 500)
+                $('#div_p_home').css("padding-top", window.innerHeight*0.08); 
+            else if(window.innerWidth <= 800)
+                $('#div_p_home').css("padding-top", window.innerHeight*0.15);
+                
+            if(window.innerWidth <= 1100 && window.innerHeight <= 480)
+                $('#div_p_home').css("padding-top", window.innerHeight*0.15); 
+            else if(window.innerWidth <= 800 && window.innerHeight <= 400)
+                $('#div_p_home').css("padding-top", window.innerHeight*0.08); 
+            }
+           
+           
+           
+           
            F_ajust_div_features();
            
            
@@ -177,33 +206,5 @@
      
      
      
-     /* if(op == 1 || op == 11)
-              {
-                    ga('send', 'event', 'Downloads', 'Windows', 'Download Windows');
-                
-                  if(op == 11)
-                  location.href = "https://github.com/antoniosilfer/antoniosilfer.github.io/blob/master/download/SilFer%20File%20Transfer.exe?raw=true";
-              }
-              else if(op == 2 || op == 22)
-              {
-                     ga('send', 'event', 'Downloads', 'Android', 'Download Android');
-                    if(op == 22)
-                     location.href = "https://play.google.com/store/apps/details?id=com.silfer.silferfiletransfer";
-              }
-              else if(op == 3 || op == 33)
-              {
-                  
-                    ga('send', 'event', 'Downloads', 'Windows', 'Download Windows 1');
-                  
-                  if(op == 33)
-                  location.href = "https://github.com/antoniosilfer/antoniosilfer.github.io/blob/master/download/SilFerFileTransfer.apk?raw=true"; 
-              }
-               else if(op == 4 || op == 44)
-              {                  
-                  
-                   ga('send', 'event', 'Downloads', 'Android', 'Download Android');
-                       if(op == 44)
-                            location.href = "https://play.google.com/store/apps/details?id=com.silfer.silferfiletransfer";
-              }*/
-            }
+}
             

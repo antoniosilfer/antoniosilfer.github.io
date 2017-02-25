@@ -65,7 +65,6 @@ body{
     margin: 0px;
 }
 
-
 .center{
     text-align: center;
 }
@@ -154,6 +153,13 @@ body{
      min-height: 80vh;
 }
 
+#p_down{
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 10pt;
+    margin: 0px;
+    padding-bottom: 5px; 
+}
+
 #p_home{  
     padding-left: 12%;
     padding-right: 12%;
@@ -166,7 +172,7 @@ body{
 #p_home_1{
     padding-left: 12%;
     padding-right: 12%;
-    color: rgba(255, 255, 255, 1);
+    color: rgba(255, 255, 255, 0.7);
     font-size: 17pt;
     margin-top: 0px;
     text-align: center;
@@ -177,7 +183,7 @@ body{
 #div_dow_capa{  
     text-align: center;
     position: absolute;
-    bottom: 50px;
+    bottom: 0px;
     width: 67%;
 }
 
@@ -207,6 +213,7 @@ body{
 }
 
 
+
 .down{
     height: 60px;
     width: 60px;
@@ -231,8 +238,9 @@ body{
     height: 400px;
 }
 
-
-
+#h2_f{
+    margin-top: 0px;
+}
 
 
 
@@ -417,13 +425,20 @@ body{
 .div_features{
     padding: 15px 20px 15px 20px;
     text-align: center;
-    background-color: rgb(230, 230, 230);
+    /*background-color: rgb(230, 230, 230);*/
+    background-color: white;
     min-height: 200px;
 }
 
 .p_features{
     color: rgba(0, 0, 0, 0.6);
     text-align: center;
+}
+
+#div_f{
+    padding-top: 90px;
+    padding-bottom: 90px;
+    background-color: rgb(230, 230, 230);
 }
 
 
@@ -797,6 +812,7 @@ body{
     }
     
     #p_home_1{
+        font-size: 15pt;
         padding-left: 10%;
         padding-right: 10%;
     }    
